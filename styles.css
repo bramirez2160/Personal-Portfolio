@@ -274,7 +274,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .about-content-wrapper .name {
     font-size: var(--fs-36);
   }
@@ -784,6 +784,10 @@ a {
   text-decoration: none;
 }
 
+.contact-wrapper .email span {
+  color: var(--clr-orange);
+}
+
 .contact-wrapper .email,
 .contact-wrapper .linkedin a {
   display: flex;
@@ -826,6 +830,7 @@ a {
   color: var(--clr-gray);
   display: flex;
   justify-content: center;
+  margin-top: 4em;
   margin-bottom: 0.5em;
 }
 
