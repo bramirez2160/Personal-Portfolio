@@ -464,7 +464,7 @@ a {
   }
 
   .portfolio-container p {
-    font-size: var(--fs-16);
+    font-size: var(--fs-20);
   }
 }
 
@@ -719,10 +719,23 @@ a {
   gap: 2em;
 }
 
+@media (max-width: 430px) {
+  .workflow-wrapper {
+    padding: 2em 0;
+  }
+}
+
 .workflow-wrapper .entry {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2em;
+}
+
+@media (max-width: 430px) {
+  .workflow-wrapper .entry {
+    gap: 1em;
+  }
 }
 
 .workflow-wrapper h3 {
@@ -739,6 +752,13 @@ a {
   flex-wrap: wrap;
   gap: 1.5em;
   list-style: none;
+  justify-content: center;
+}
+
+@media (max-width: 430px) {
+  .workflow-wrapper .entry .applications {
+    gap: 0.75em;
+  }
 }
 
 .workflow-wrapper .entry .applications li {
@@ -753,6 +773,7 @@ a {
 @media (max-width: 430px) {
   .workflow-wrapper h3 {
     text-align: center;
+    font-size: var(--fs-32);
   }
 
   .workflow-wrapper .entry .applications {
@@ -762,6 +783,7 @@ a {
 
   .workflow-wrapper .entry .applications li {
     text-align: center;
+    font-size: var(--fs-20);
   }
 }
 
@@ -792,7 +814,7 @@ a {
 .contact-wrapper .linkedin a {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.25em;
 }
 
 .contact-wrapper .email svg,
@@ -823,7 +845,7 @@ a {
 
 .contact .back-to {
   font-family: var(--ff-poppins);
-  font-size: var(--fs-24);
+  font-size: var(--fs-20);
   font-weight: var(--fw-semibold-600);
   line-height: 100%;
   letter-spacing: 0.6px;
@@ -894,12 +916,12 @@ a {
 
   .contact .contact-wrapper .email,
   .contact .contact-wrapper .linkedin a {
-    font-size: var(--fs-20);
+    font-size: var(--fs-16);
   }
 
   .contact-wrapper .email svg,
   .contact-wrapper .linkedin svg {
-    height: 24px;
+    height: 18px;
     width: auto;
   }
 
